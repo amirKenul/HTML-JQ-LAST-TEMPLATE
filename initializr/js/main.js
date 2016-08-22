@@ -5,37 +5,6 @@
 
 
 
-$("#downBut").on("click",function(){
-
-	$(".allslide").animate({
-	 "margin-top": "-=653px"},1000);
-	
-	countslide++;
-
-	if (countslide==$(".slider").length) {
-		countslide=1;
-		$(".allslide").css({"margin-top":"0px"});
-	}
-
-
-
-});
-
-$("#upBut").on("click",function(){
-
-	$(".allslide").animate({
-	 "margin-top": "+=653px"},1000);
-	
-	/*if (countslide==0) {
-		countslide=$(".slider").length-1;
-		$(".allslide").css({"margin-top":"-3918px"});
-	}*/
-
-
-
-});
-
-
 
 //left ,midle and right buttons
 $(document).ready(function(){
@@ -91,7 +60,7 @@ $("#loremDolor .first")
 		"right":"200px"
 	},500)
 	.animate({
-		"left":"50px"
+		"right":"0px"
 	})
 });
 
@@ -106,7 +75,7 @@ $("#loremDolor .second")
 	},500)
 	.animate({
 		"bottom":"500px"},700)
-
+	$('.three').css('right', '-700px');
 //I will ask about
 	/*.css(
 		"transform","rotate3d(2, 1, 0, 180deg)"
@@ -121,10 +90,10 @@ $("#loremDolor .third")
 	$(".three")
 	.show()
 	.animate({
-		"right":"200px"
+		"right":"50px"
 	},500)
 	.animate({
-		"left":"50px"
+		"right":"0px"
 	})
 	/*.toggle("slide", { direction: "left" }, 1000);*/
 	/*.blindRightToggle (500,function() {
@@ -163,7 +132,7 @@ $(document).ready(function(){
 		.hide()
 		
 		$("#whatClientSay .johnSay")
-		 .show();
+		 .show();6
 	})
 
 	$("#clientName .peter")
